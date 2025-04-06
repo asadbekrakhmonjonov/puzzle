@@ -2,8 +2,11 @@
   background-color: #f0f0f0;
   color: #111;
   min-height: 100vh;
-  padding: 1rem;
+  padding: 20px;
+  max-width: 500px;
+  margin: auto;
   transition: background 0.3s, color 0.3s;
+  box-sizing: border-box;
 }
 
 .board.dark {
@@ -35,4 +38,39 @@
   border-radius: 6px;
   cursor: pointer;
   font-size: 14px;
+  display: block;
+  width: fit-content;
+}
+
+.replayButton {
+  padding: 8px 12px;
+  border: none;
+  background-color: #6aaa64;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+  .board {
+    padding: 10px;
+    max-width: 100%;
+  }
+
+  .darkToggle, .replayButton {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .headerContainer h1 {
+    font-size: 1.4rem;
+  }
+
+  .headerContainer p,
+  .headerContainer ul {
+    font-size: 0.9rem;
+  }
 }

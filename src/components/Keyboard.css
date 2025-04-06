@@ -28,3 +28,18 @@
 .key.wide {
   flex: 1;
 }
+
+@media (max-width: 600px) {
+  .keyboard {
+    gap: 4px;
+  }
+
+  .key {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .key.wide {
+    padding: 10px 16px;
+  }
+}

@@ -1,13 +1,66 @@
 .headerContainer {
-  background-color: #f5f5f5;
-  padding: 2rem;
+  padding: 20px 16px;
   text-align: center;
-  border-bottom: 2px solid #e0e0e0;
+  max-width: 720px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .headerContainer h1 {
-  margin: 0;
   font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  line-height: 1.3;
+}
+
+.headerContainer p {
+  font-size: 1.05rem;
+  margin: 12px 0;
+  line-height: 1.6;
   color: #333;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.headerContainer ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 12px 0;
+}
+
+.headerContainer li {
+  font-size: 1rem;
+  margin: 6px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.legend li strong {
+  font-weight: 600;
+}
+
+.liveLink a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+.liveLink a:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+
+@media (max-width: 600px) {
+  .headerContainer {
+    padding: 16px 12px;
+  }
+
+  .headerContainer h1 {
+    font-size: 1.5rem;
+  }
+
+  .headerContainer p,
+  .headerContainer li {
+    font-size: 0.95rem;
+  }
 }
